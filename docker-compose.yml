@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  mecroeccommerce.product:
+    image: ${DOCKER_REGISTRY-}mecroeccommerceproduct
+    build:
+      context: .
+      dockerfile: MecroECcommerce.Product/Dockerfile
+    networks:
+      - mecro-network
+
+  mecroeccommerce.orders:
+    image: ${DOCKER_REGISTRY-}mecroeccommerceorders
+    build:
+      context: .
+      dockerfile: MecroECcommerce.Orders/Dockerfile
+    networks:
+      - mecro-network
+
+  mecroeccommerce.customer:
+    image: ${DOCKER_REGISTRY-}mecroeccommercecustomer
+    build:
+      context: .
+      dockerfile: MecroECcommerce.Customer/Dockerfile
+    networks:
+      - mecro-network
+
+  mecroeccommerce.apigetway:
+    image: ${DOCKER_REGISTRY-}mecroeccommerceapigetway
+    build:
+      context: .
+      dockerfile: MecroECcommerce.ApiGetway/Dockerfile
+    ports:
+      - "8080:80"
+    networks:
+      - mecro-network
+
+networks:
+  mecro-network:
+    driver: bridge

@@ -1,0 +1,66 @@
+name: dockercompose16104400646818889665
+services:
+  mecroeccommerce.apigetway:
+    build:
+      context: C:\Users\SQ1User\source\repos\MecroECcommerce
+      dockerfile: MecroECcommerce.ApiGetway/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+    image: mecroeccommerceapigetway
+    networks:
+      mecro-network: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "8080"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+  mecroeccommerce.customer:
+    build:
+      context: C:\Users\SQ1User\source\repos\MecroECcommerce
+      dockerfile: MecroECcommerce.Customer/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+    image: mecroeccommercecustomer
+    networks:
+      mecro-network: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+  mecroeccommerce.orders:
+    build:
+      context: C:\Users\SQ1User\source\repos\MecroECcommerce
+      dockerfile: MecroECcommerce.Orders/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+    image: mecroeccommerceorders
+    networks:
+      mecro-network: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+  mecroeccommerce.product:
+    build:
+      context: C:\Users\SQ1User\source\repos\MecroECcommerce
+      dockerfile: MecroECcommerce.Product/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+    image: mecroeccommerceproduct
+    networks:
+      mecro-network: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+networks:
+  mecro-network:
+    name: dockercompose16104400646818889665_mecro-network
+    driver: bridge

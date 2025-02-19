@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MecroECcommerce.Product.props" />
+</Project>

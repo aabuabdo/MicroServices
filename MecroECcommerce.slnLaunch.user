@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "MecroECcommerce.Product\\MecroECcommerce.Product.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MecroECcommerce.ApiGetway\\MecroECcommerce.ApiGetway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MecroECcommerce.Orders\\MecroECcommerce.Orders.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MecroECcommerce.customer\\MecroECcommerce.Customer.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "mecroeccommerce.product": "StartDebugging",
+        "mecroeccommerce.orders": "StartDebugging",
+        "mecroeccommerce.customer": "StartDebugging",
+        "mecroeccommerce.apigetway": "StartDebugging"
+      }
+    }
+  }
+}

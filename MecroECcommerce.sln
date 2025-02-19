@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MecroECcommerce.Product", "MecroECcommerce.Product\MecroECcommerce.Product.csproj", "{321B84DB-A8A5-4F32-8791-561EC70227AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MecroECcommerce.Customer", "MecroECcommerce.customer\MecroECcommerce.Customer.csproj", "{8CC8CCAA-C667-49C6-BDB5-A82B08337F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MecroECcommerce.Orders", "MecroECcommerce.Orders\MecroECcommerce.Orders.csproj", "{3E756E1B-5DE7-4D75-9A0B-851892D99BCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MecroECcommerce.ApiGetway", "MecroECcommerce.ApiGetway\MecroECcommerce.ApiGetway.csproj", "{43A2579C-B6A1-4B23-B762-5A8AA3E49E5D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D14F9891-DD16-49DD-A9F3-06A09BEA5886}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{321B84DB-A8A5-4F32-8791-561EC70227AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{321B84DB-A8A5-4F32-8791-561EC70227AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{321B84DB-A8A5-4F32-8791-561EC70227AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{321B84DB-A8A5-4F32-8791-561EC70227AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC8CCAA-C667-49C6-BDB5-A82B08337F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC8CCAA-C667-49C6-BDB5-A82B08337F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC8CCAA-C667-49C6-BDB5-A82B08337F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC8CCAA-C667-49C6-BDB5-A82B08337F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E756E1B-5DE7-4D75-9A0B-851892D99BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E756E1B-5DE7-4D75-9A0B-851892D99BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E756E1B-5DE7-4D75-9A0B-851892D99BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E756E1B-5DE7-4D75-9A0B-851892D99BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A2579C-B6A1-4B23-B762-5A8AA3E49E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A2579C-B6A1-4B23-B762-5A8AA3E49E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A2579C-B6A1-4B23-B762-5A8AA3E49E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A2579C-B6A1-4B23-B762-5A8AA3E49E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D14F9891-DD16-49DD-A9F3-06A09BEA5886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D14F9891-DD16-49DD-A9F3-06A09BEA5886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D14F9891-DD16-49DD-A9F3-06A09BEA5886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D14F9891-DD16-49DD-A9F3-06A09BEA5886}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,70 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:8000"
+  },
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Products",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8001
+        }
+      ],
+      "UpstreamPathTemplate": "/Products",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "Products"
+    },
+    {
+      "DownstreamPathTemplate": "/api/GetProductById",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8001
+        }
+      ],
+      "UpstreamPathTemplate": "/GetProductById",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "Products"
+    },
+    {
+      "DownstreamPathTemplate": "/api/GetAllOrders",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8002
+        }
+      ],
+      "UpstreamPathTemplate": "/GetAllOrders",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "Orders"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "Products",
+      "Config": [
+        {
+          "Name": "Products API",
+          "Version": "v1",
+          "Url": "http://localhost:8001/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Orders",
+      "Config": [
+        {
+          "Name": "Orders API",
+          "Version": "v1",
+          "Url": "http://localhost:8002/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+
+
+}

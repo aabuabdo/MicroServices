@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "NAHNyUi2reOm6x+VntmGFymvI9Saqr7dn3F+yjRvq8Y=",
+  "Source": "MecroECcommerce.Orders",
+  "BasePath": "_content/MecroECcommerce.Orders",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

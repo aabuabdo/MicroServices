@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "MecroECcommerce.Orders.Controllers.OrderController",
+    "Method": "GetAllOrders",
+    "RelativePath": "api/GetAllOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
